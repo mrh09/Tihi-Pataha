@@ -5,6 +5,10 @@ import Project3 from "../../assets/img/3.jpg";
 import Project4 from "../../assets/img/4.jpg";
 
 const ProjectHome = () => {
+  const redirectLink = () => {
+    location.href = `https://www.fiverr.com/nendo09`;
+  };
+
   return (
     <>
       <div className="project-home">
@@ -13,7 +17,9 @@ const ProjectHome = () => {
           <div className="portofolio">
             <h2>See our latest projects.</h2>
             <span>
-              <button className="btn btn-line rounded-pill">
+              <button
+                className="btn btn-line rounded-pill"
+                onClick={redirectLink}>
                 Check our portofolio
               </button>
             </span>

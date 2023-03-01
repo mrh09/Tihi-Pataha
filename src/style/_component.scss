@@ -1,16 +1,25 @@
 //Navbar Component
 .navbar {
   padding: 20px 0;
-  // position: fixed;
+  position: static;
   width: 100%;
   z-index: 9;
+  top: 0px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+
   &.active {
     background: hsla(0, 0%, 100%, 0.5);
-    // position: fixed;
+    position: sticky;
     backdrop-filter: blur(48px);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
   }
+
   &-logo {
-    width: 50px;
+    width: 10%;
   }
   .nav-link {
     padding: 12px 15px !important;

@@ -2,6 +2,10 @@ import React from "react";
 import HeroImg from "../../assets/img/home.svg";
 
 const HeroHome = () => {
+  const redirectLink = () => {
+    location.href = `https://www.fiverr.com/nendo09`;
+  };
+
   return (
     <>
       <section className="hero">
@@ -23,7 +27,9 @@ const HeroHome = () => {
                 <button className="btn btn-secondary rounded-pill mx-auto mx-sm-0">
                   Let's work together
                 </button>
-                <button className="btn btn-line rounded-pill mx-auto mx-sm-0">
+                <button
+                  className="btn btn-line rounded-pill mx-auto mx-sm-0"
+                  onClick={redirectLink}>
                   See our portofolio
                 </button>
               </div>

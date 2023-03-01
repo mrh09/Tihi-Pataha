@@ -22,17 +22,17 @@ const Footer = () => {
               <h5 className="footer-title">Features</h5>
               <ul>
                 <li>
-                  <Link className="footer-links" to="">
+                  <Link className="footer-links" to="/projects">
                     Projects
                   </Link>
                 </li>
                 <li>
-                  <Link className="footer-links" to="">
+                  <Link className="footer-links" to="/services">
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link className="footer-links" to="">
+                  <Link className="footer-links" to="/our-team">
                     Our Team
                   </Link>
                 </li>
@@ -42,17 +42,17 @@ const Footer = () => {
               <h5 className="footer-title">General</h5>
               <ul>
                 <li>
-                  <Link className="footer-links" to="">
+                  <Link className="footer-links" to="#">
                     Careers
                   </Link>
                 </li>
                 <li>
-                  <Link className="footer-links" to="">
+                  <Link className="footer-links" to="#">
                     Company Desk
                   </Link>
                 </li>
                 <li>
-                  <Link className="footer-links" to="">
+                  <Link className="footer-links" to="#">
                     Contact Us
                   </Link>
                 </li>

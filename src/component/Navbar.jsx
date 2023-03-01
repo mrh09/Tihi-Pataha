@@ -1,26 +1,18 @@
 import { React, useState } from "react";
+import UseScrollDirection from "./UseScrollDirection";
 import { NavLink } from "react-router-dom";
-import Navlogo from "../assets/img/favicon.svg";
+import Navlogo from "../assets/img/header-logo.svg";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
-
-  const changeBackground = () => {
-    if (window.scrollY > 0) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
-
-  window.addEventListener("scroll", changeBackground);
+  const scrollDirection = UseScrollDirection();
 
   return (
     <>
       <nav
-        className={
-          navbar ? "navbar active navbar-expand-lg" : "navbar navbar-expand-lg"
-        }>
+        className={`navbar ${
+          scrollDirection === "down" ? "" : "active"
+        } navbar-expand-lg`}>
         <div className="container">
           <img className="navbar-logo" src={Navlogo} alt="nav-logo" />
           <button
