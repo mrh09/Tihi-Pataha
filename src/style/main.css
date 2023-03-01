@@ -1,0 +1,134 @@
+.navbar {
+  padding: 20px 0;
+  width: 100vw;
+  z-index: 9;
+}
+.navbar.active {
+  background: hsla(0deg, 0%, 100%, 0.5);
+  -webkit-backdrop-filter: blur(48px);
+          backdrop-filter: blur(48px);
+}
+.navbar .nav-link {
+  padding: 12px 15px !important;
+  font-size: 16px;
+  font-weight: 600;
+  color: #242424;
+}
+.navbar .nav-link:hover {
+  color: #006ff9;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+.navbar .active {
+  color: #006ff9 !important;
+  font-weight: 700;
+}
+.navbar-collapse {
+  text-align: center;
+}
+
+.navbar-item {
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-toggler {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+.navbar-toggler .top-bar {
+  margin-top: 0px;
+  transform: rotate(135deg);
+}
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar {
+  margin-top: 0px;
+  transform: rotate(-135deg);
+}
+.navbar-toggler.collapsed .top-bar {
+  margin-top: -20px;
+  transform: rotate(0deg);
+}
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar {
+  margin-top: 20px;
+  transform: rotate(0deg);
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0px;
+}
+
+.btn {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 32px;
+  font-weight: 600;
+}
+.btn-secondary {
+  color: #fff;
+  background-color: #006ff9;
+  border-color: #006ff9;
+}
+.btn-secondary:focus {
+  background-color: #006ff9;
+  border-color: #006ff9;
+}
+.btn-secondary:hover {
+  background-color: #fff;
+  border-color: #006ff9;
+  color: #006ff9;
+}
+.btn-primary {
+  color: #ffffff;
+  background-color: #006ff9;
+  border-color: #006ff9;
+}
+.btn-primary:focus {
+  background-color: #006ff9;
+  border-color: #006ff9;
+}
+.btn-primary:hover {
+  background-color: #fff;
+  border-color: #006ff9;
+  color: #006ff9;
+}/*# sourceMappingURL=main.css.map */

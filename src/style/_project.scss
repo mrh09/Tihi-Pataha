@@ -1,0 +1,18 @@
+//OUR-PROJECT
+.our-project {
+  width: 100%;
+  height: max-content;
+  padding: 50px 0;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row {
+    row-gap: 20px;
+  }
+  col {
+    padding: 20px 0;
+  }
+}
+//OUR-PROJECT
