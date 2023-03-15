@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const LetsServices = () => {
   return (
@@ -13,9 +14,9 @@ const LetsServices = () => {
               </h1>
             </div>
             <div className="col-sm-6 col-md-4 justify-content-center d-flex">
-              <button className="btn btn-secondary rounded-pill" type="submit">
+              <Link className="btn btn-secondary rounded-pill" to="/hire-us">
                 Lets's work together
-              </button>
+              </Link>
             </div>
           </div>
         </div>

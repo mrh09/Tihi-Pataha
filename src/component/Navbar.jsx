@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import UseScrollDirection from "./UseScrollDirection";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Navlogo from "../assets/img/header-logo.svg";
 
 const Navbar = () => {
@@ -30,13 +30,36 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarScroll">
             <ul className="navbar-nav navbar-item my-2 my-lg-0 navbar-nav-scroll">
               <li className="nav-item">
-                <NavLink className="nav-link" to="/" activeclassname="active">
+                <NavLink
+                  to="/"
+                  className="nav-link d-sm-none"
+                  activeclassname="active">
+                  <span
+                    data-bs-target="#navbarScroll"
+                    data-bs-toggle="collapse">
+                    Home
+                  </span>
+                </NavLink>
+                <NavLink
+                  className="nav-link d-none d-sm-block"
+                  to="/"
+                  activeclassname="active">
                   Home
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink
-                  className="nav-link"
+                  to="/projects"
+                  className="nav-link d-sm-none"
+                  activeclassname="active">
+                  <span
+                    data-bs-target="#navbarScroll"
+                    data-bs-toggle="collapse">
+                    Projects
+                  </span>
+                </NavLink>
+                <NavLink
+                  className="nav-link d-none d-sm-block"
                   to="/projects"
                   activeclassname="active">
                   Projects
@@ -44,7 +67,17 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <NavLink
-                  className="nav-link"
+                  to="/services"
+                  className="nav-link d-sm-none"
+                  activeclassname="active">
+                  <span
+                    data-bs-target="#navbarScroll"
+                    data-bs-toggle="collapse">
+                    Services
+                  </span>
+                </NavLink>
+                <NavLink
+                  className="nav-link d-none d-sm-block"
                   to="/services"
                   activeclassname="active">
                   Services
@@ -52,7 +85,17 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <NavLink
-                  className="nav-link"
+                  to="/our-team"
+                  className="nav-link d-sm-none"
+                  activeclassname="active">
+                  <span
+                    data-bs-target="#navbarScroll"
+                    data-bs-toggle="collapse">
+                    The Team
+                  </span>
+                </NavLink>
+                <NavLink
+                  className="nav-link d-none d-sm-block"
                   to="/our-team"
                   activeclassname="active">
                   The Team
@@ -60,9 +103,19 @@ const Navbar = () => {
               </li>
             </ul>
             <form className="d-flex justify-content-center rounded-pill">
-              <button className="btn btn-secondary rounded-pill" type="submit">
+              <Link
+                to="/hire-us"
+                className="btn btn-secondary rounded-pill d-sm-none"
+                activeclassname="active">
+                <span data-bs-target="#navbarScroll" data-bs-toggle="collapse">
+                  Hire Us
+                </span>
+              </Link>
+              <Link
+                className="btn btn-secondary rounded-pill d-none d-sm-block"
+                to="/hire-us">
                 Hire Us
-              </button>
+              </Link>
             </form>
           </div>
         </div>

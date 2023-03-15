@@ -45,11 +45,11 @@ const OurServices = () => {
               </p>
               <div className="our-services-list">
                 <ul>
-                  <li>FrontEnd (React/Vue)</li>
-                  <li>Backend (Node.js/Laravel)</li>
+                  <li>FrontEnd</li>
+                  <li>Backend</li>
                 </ul>
                 <ul>
-                  <li>Fullstack (Next.js)</li>
+                  <li>Fullstack</li>
                   <li>QA Testing</li>
                 </ul>
               </div>

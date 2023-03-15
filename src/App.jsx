@@ -2,6 +2,7 @@
 import { Routes, Route } from "react-router-dom";
 import Footer from "./component/Footer";
 import Navbar from "./component/Navbar";
+import Email from "./pages/Email";
 import Home from "./pages/Home";
 import Project from "./pages/Project";
 import Services from "./pages/Services";
@@ -16,6 +17,7 @@ function App() {
         <Route path="/projects" element={<Project />} />
         <Route path="/services" element={<Services />} />
         <Route path="/our-team" element={<Team />} />
+        <Route path="/hire-us" element={<Email />} />
       </Routes>
       <Footer />
     </>

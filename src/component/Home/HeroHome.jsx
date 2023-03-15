@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import HeroImg from "../../assets/img/home.svg";
 
 const HeroHome = () => {
@@ -24,9 +25,11 @@ const HeroHome = () => {
                 Tenggara Barat
               </p>
               <div className="hero-button">
-                <button className="btn btn-secondary rounded-pill mx-auto mx-sm-0">
+                <Link
+                  className="btn btn-secondary rounded-pill mx-auto mx-sm-0"
+                  to="/hire-us">
                   Let's work together
-                </button>
+                </Link>
                 <button
                   className="btn btn-line rounded-pill mx-auto mx-sm-0"
                   onClick={redirectLink}>

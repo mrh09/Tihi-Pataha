@@ -24,38 +24,45 @@ const ProjectHome = () => {
               </button>
             </span>
           </div>
-          <div className="project-home-section">
-            <div className="project-home-section-wrapper">
-              <div className="project-home-section-wrapper-item">
-                <img src={Project1} alt="project1" />
-                <h3>On Solution</h3>
-                <p>
-                  On Solution - OnSolution offers safety solutions for the
-                  healthcare and hospitality sectors.
-                </p>
-              </div>
-              <div className="project-home-section-wrapper-item">
-                <img src={Project2} alt="project2" />
-                <h3>Bagi Piring</h3>
-                <p>Bagi Piring - Alms platform from baznas</p>
+          {/* <div className="project-home-section"> */}
+          <div className="row">
+            <div className="col col-sm-12 col-md-6">
+              <div className="project-home-section-wrapper">
+                <div className="project-home-section-wrapper-item">
+                  <img src={Project1} alt="project1" />
+                  <h3>On Solution</h3>
+                  <p>
+                    On Solution - OnSolution offers safety solutions for the
+                    healthcare and hospitality sectors.
+                  </p>
+                </div>
+                <div className="project-home-section-wrapper-item">
+                  <img src={Project2} alt="project2" />
+                  <h3>Bagi Piring</h3>
+                  <p>Bagi Piring - Alms platform from baznas</p>
+                </div>
               </div>
             </div>
-            <div className="project-home-section-wrapper">
-              <div className="project-home-section-wrapper-item">
-                <img src={Project3} alt="project3" />
-                <h3>Naurt</h3>
-                <p>
-                  Naurt - Plug and play software to optimise tracking accuracy
-                  and location evidence in real time
-                </p>
-              </div>
-              <div className="project-home-section-wrapper-item">
-                <img src={Project4} alt="project4" />
-                <h3>Aytech</h3>
-                <p>Aytech - Automation Machinery Manufacturing</p>
+            <div className="col col-sm-12 col-md-6">
+              <div className="project-home-section-wrapper">
+                <div className="project-home-section-wrapper-item">
+                  <img src={Project3} alt="project3" />
+                  <h3>Naurt</h3>
+                  <p>
+                    Naurt - Plug and play software to optimise tracking accuracy
+                    and location evidence in real time
+                  </p>
+                </div>
+                <div className="project-home-section-wrapper-item">
+                  <img src={Project4} alt="project4" />
+                  <h3>Aytech</h3>
+                  <p>Aytech - Automation Machinery Manufacturing</p>
+                </div>
               </div>
             </div>
           </div>
+
+          {/* </div> */}
         </div>
       </div>
     </>
