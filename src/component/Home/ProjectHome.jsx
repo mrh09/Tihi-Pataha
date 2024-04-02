@@ -30,10 +30,10 @@ const ProjectHome = () => {
               <div className="project-home-section-wrapper">
                 <div className="project-home-section-wrapper-item">
                   <img src={Project1} alt="project1" />
-                  <h3>On Solution</h3>
+                  <h3>Dinas PUPR Kabupaten Bima</h3>
                   <p>
-                    On Solution - OnSolution offers safety solutions for the
-                    healthcare and hospitality sectors.
+                    Dinas PUPR Kabupaten Bima - Dinas Pekerjaan Umum dan
+                    Penataan Ruang Kabupaten Bima.
                   </p>
                 </div>
                 <div className="project-home-section-wrapper-item">
